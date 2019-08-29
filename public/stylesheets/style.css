@@ -1,0 +1,27 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#screens {
+  display: grid;
+  grid-template-columns: 1920px 1920px 1920px;
+  grid-template-rows: 1080px 1080px 1080px;
+  grid-gap: 0px;
+
+  position: fixed;
+  top: 0px;
+  left: 0px;  
+}
+
+#controller {
+
+}
+
+#shades {
+  
+}
