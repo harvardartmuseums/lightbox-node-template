@@ -1,10 +1,15 @@
-body {
-  padding: 50px;
+html, body {
+  padding: 0px;
+  margin: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+#home {
+  padding: 50px;
 }
 
 #screens {
@@ -19,9 +24,16 @@ a {
 }
 
 #controller {
-
+  padding: 50px;
 }
 
 #shades {
-  
+  display: grid;
+  grid-template-columns: 3840px;
+  grid-template-rows: 1080px;
+  grid-gap: 0px;
+
+  position: fixed;
+  top: 0px;
+  left: 0px;
 }
