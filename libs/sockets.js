@@ -26,7 +26,7 @@ module.exports.listen = function(app){
         
         //socket.emit('start up', 'value');
 
-        socket.on('disconnet', function() {
+        socket.on('disconnect', function() {
             console.log('controller socket disconnect')
         });
     });
@@ -36,7 +36,7 @@ module.exports.listen = function(app){
         
         //socket.emit('start up', 'value');
         
-        socket.on('disconnet', function() {
+        socket.on('disconnect', function() {
             console.log('shade socket disconnect')
         });
     });
