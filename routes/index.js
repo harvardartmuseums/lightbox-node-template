@@ -18,7 +18,7 @@ router.get('/shades', function(req, res, next) {
 
 /* GET controller page. */
 router.get('/controller', function(req, res, next) {
-  res.render('controller', { title: 'Express' });
+  res.render('controller', { title: 'Express', layout: 'layout-controller' });
 });
 
 module.exports = router;
