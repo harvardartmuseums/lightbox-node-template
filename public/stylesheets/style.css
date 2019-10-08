@@ -14,13 +14,27 @@ a {
 
 #screens {
   display: grid;
-  grid-template-columns: 1920px 1920px 1920px;
-  grid-template-rows: 1080px 1080px 1080px;
   grid-gap: 0px;
+  align-items: center;
+  justify-items: center;
 
   position: fixed;
   top: 0px;
   left: 0px;  
+}
+
+#screens.grid-3x3 {
+  grid-template-columns: 1920px 1920px 1920px;
+  grid-template-rows: 1080px 1080px 1080px;
+}
+
+#screens.grid-1x1 {
+  grid-template-columns: 5760px;
+  grid-template-rows: 3240px;
+}
+
+#screens .screen {
+  /* align-self: center; */
 }
 
 #controller {
