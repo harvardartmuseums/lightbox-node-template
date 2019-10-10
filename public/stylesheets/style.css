@@ -1,6 +1,9 @@
 html, body {
   padding: 0px;
   margin: 0px;
+
+  background: #000000;
+  color: #ffffff;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -8,10 +11,12 @@ a {
   color: #00B7FF;
 }
 
+/* Application Home Page */
 #home {
   padding: 50px;
 }
 
+/* Screens */
 #screens {
   display: grid;
   grid-gap: 0px;
@@ -21,6 +26,8 @@ a {
   position: fixed;
   top: 0px;
   left: 0px;  
+
+  font-size: 200%;
 }
 
 #screens.grid-3x3 {
@@ -34,20 +41,38 @@ a {
 }
 
 #screens .screen {
-  /* align-self: center; */
 }
 
+/* Controller */
 #controller {
   padding: 50px;
 }
 
+/* Shades */
 #shades {
   display: grid;
-  grid-template-columns: 3840px;
-  grid-template-rows: 1080px;
   grid-gap: 0px;
+  align-items: center;
+  justify-items: center;
 
   position: fixed;
   top: 0px;
   left: 0px;
+
+  font-size: 200%;
+}
+
+#shades.grid-1x1 {
+  grid-template-columns: 3840px;
+  grid-template-rows: 1080px;
+}
+
+#shades.grid-2x1 {
+  grid-template-columns: 1920px 1920px;
+  grid-template-rows: 1080px;
+}
+
+#shades.grid-4x1 {
+  grid-template-columns: 960px 960px 960px 960px;
+  grid-template-rows: 1080px;
 }
