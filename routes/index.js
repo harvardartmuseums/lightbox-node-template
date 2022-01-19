@@ -4,7 +4,7 @@ var data = require('../public/data.json');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: `${data.project.title} | Lightbox`, project: data.project });
+  res.render('index', { title: `${data.project.title} | Lightbox`, data: data });
 });
 
 /* GET screens page. */
